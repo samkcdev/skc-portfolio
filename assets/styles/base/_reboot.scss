@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+  font-size: 0.75em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins Regular", sans-serif;
+  background-color: $primary-color;
+  line-height: $line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color:$header-color
+}
+
+p{
+  color:$text-color
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+
+
+@media screen and (min-width:800px){
+  html{
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (min-width:1200px){
+  html{
+    font-size: 1em;
+  }
+}

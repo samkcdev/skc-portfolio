@@ -1,0 +1,14 @@
+footer{
+  border-top: 1px solid rgba(164, 185, 203, 40%);
+}
+
+.footer-body {
+  width: 70%;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    color: $light-text-color;
+  }
+}

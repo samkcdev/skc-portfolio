@@ -1,0 +1,148 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  padding: 4em 0;
+}
+
+.page {
+  color:$text-color;
+}
+
+.home-intro-head {
+  margin-bottom: 1.5em;
+}
+
+.home-intro-head--title {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.home-intro-head--tag {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.home-intro-head + p {
+  font-size: 1.5rem;
+  max-width: 95%;
+}
+
+.featured-headers{
+  margin-bottom: 1.5em;
+  .featured-headers-title {
+    color:$text-color;
+    font-size: 2rem;
+    position: relative;
+    span {
+      padding-left: 0.5em;
+    }
+  }
+  .featured-headers-title:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    bottom: 11px;
+    width: 4px;
+    background-color: $accent-color;
+  }
+
+.featured-headers-title--sub{
+  padding-left: 1em;
+}
+
+
+}
+
+
+
+
+
+
+// Featured Projects styling
+
+.featured-projects {
+  display: flex;
+}
+
+.featured-project-card {
+  margin-right: 2em;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1em 1.5em;
+}
+
+// Featured Posts styling
+
+.featured-posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  color:$text-color;
+  margin-right: -3.5em;
+  padding-left: 1em;
+}
+
+.featured-posts-content {
+  flex: 0 0 calc(50% - 3.5em);
+  margin-right: 3.5em;
+  .posts-meta-data {
+    margin-bottom: 0.6em;
+    color: $light-text-color;
+    .post-date {
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .post-tags {
+      border: 1px solid $accent-color;
+      border-radius: 8px;
+      text-align: center;
+      padding: 2px 4px;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.featured-posts-title {
+  font-size: 1.5rem;
+}
+
+.featured-posts-title a {
+  color: inherit;
+  transition: color 0.2s linear;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.skills-container{
+  display: flex;
+  color:$text-color;
+  margin-bottom: 1.2em;
+  padding-left: 1em;
+  .skills{
+    flex:0 0 50%;
+    ul{
+      margin:0;
+      padding: 0 0 0 1.2em;
+      li{
+        list-style-position: inside;
+        list-style: none;
+        margin-right: 1em;
+        line-height: 1.8;
+        position: relative;
+        font-size: 1.2rem;
+      }
+      li:before{
+        content: "▹";
+        position: absolute;
+        left: -20px;
+        color: $accent-color;
+      }
+    }
+  }
+}
