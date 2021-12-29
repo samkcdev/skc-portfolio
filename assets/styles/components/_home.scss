@@ -9,7 +9,7 @@
 }
 
 .page {
-  color:$text-color;
+  color: $text-color;
 }
 
 .home-intro-head {
@@ -32,10 +32,9 @@
   max-width: 95%;
 }
 
-.featured-headers{
+.featured-headers {
   margin-bottom: 1.5em;
   .featured-headers-title {
-    color:$text-color;
     font-size: 2rem;
     position: relative;
     span {
@@ -51,17 +50,10 @@
     background-color: $accent-color;
   }
 
-.featured-headers-title--sub{
-  padding-left: 1em;
+  .featured-headers-title--sub {
+    padding-left: 1em;
+  }
 }
-
-
-}
-
-
-
-
-
 
 // Featured Projects styling
 
@@ -81,8 +73,8 @@
 .featured-posts-container {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  color:$text-color;
+  flex-wrap: wrap;
+  color: $text-color;
   margin-right: -3.5em;
   padding-left: 1em;
 }
@@ -119,16 +111,16 @@
   }
 }
 
-.skills-container{
+.skills-container {
   display: flex;
-  color:$text-color;
+  color: $text-color;
   padding-left: 1em;
-  .skills{
-    flex:0 0 50%;
-    ul{
-      margin:0;
+  .skills {
+    flex: 0 0 50%;
+    ul {
+      margin: 0;
       padding: 0;
-      li{
+      li {
         list-style-position: inside;
         list-style: none;
         margin-right: 1em;
@@ -136,7 +128,7 @@
         position: relative;
         font-size: 1.2rem;
       }
-      li:before{
+      li:before {
         content: "▹";
         position: absolute;
         left: -20px;
