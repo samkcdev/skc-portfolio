@@ -4,8 +4,11 @@ header {
   align-items: center;
   width: 70%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 2em 0 0 0;
   color: $text-color;
+  .logo img {
+    vertical-align: middle;
+  }
 }
 
 ul.header-nav {
@@ -20,15 +23,15 @@ ul.header-nav li {
     text-decoration: none;
     font-family: "Poppins Medium";
     font-size: 1.2rem;
-    color:inherit;
+    color: inherit;
     display: block;
     padding: 0 1.2em;
     position: relative;
   }
-  >div a.resume-link{
-    border:1px solid $accent-color;
-    color:inherit;
-    padding:0.2em 0.5em;
+  > div a.resume-link {
+    border: 1px solid $accent-color;
+    color: inherit;
+    padding: 0.2em 0.8em;
     text-decoration: none;
     font-size: 1.2rem;
     margin-left: 0.5em;
