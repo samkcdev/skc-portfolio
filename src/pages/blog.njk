@@ -6,3 +6,15 @@ eleventyNavigation:
   key: Blog
   order: 2
 ---
+<div class="container">
+<div class="page-container">
+  <div class="page-header">
+  <h1>Blog</h1>
+  <p>My writings</p>
+</div>
+{%- set postslist = collections.posts -%}
+{% include "postlist.njk" %}
+</div>
+</div>
+
+
