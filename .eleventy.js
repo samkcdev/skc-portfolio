@@ -17,6 +17,12 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("./src/posts/*.md");
   });
 
+  eleventyConfig.addCollection("featuredPosts", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("./src/posts/*.md")
+      .filter((item) => item.data.featured);
+  });
+
   return {
     dir: {
       input: "src",
