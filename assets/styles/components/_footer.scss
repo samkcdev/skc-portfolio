@@ -1,4 +1,4 @@
-footer{
+footer {
   border-top: 1px solid rgba(164, 185, 203, 40%);
 }
 
@@ -10,5 +10,8 @@ footer{
   align-items: center;
   span {
     color: $light-text-color;
+    a {
+      color: inherit;
+    }
   }
 }

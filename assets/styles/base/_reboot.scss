@@ -11,8 +11,11 @@ html {
 
 body {
   font-family: "Poppins Regular", sans-serif;
+  color: $text-color;
   background-color: $primary-color;
   line-height: $line-height;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 h1,
@@ -30,16 +33,26 @@ h2,
 h3,
 h4,
 h5,
-h6{
-  color:$header-color
+h6 {
+  color: $header-color;
 }
 
-p{
-  color:$text-color
+p {
+  color: $text-color;
 }
 
 h2 {
   font-size: 2.25rem;
+}
+
+a {
+  color: $accent-color;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper {
@@ -52,17 +65,14 @@ main {
   flex: 1 0 auto;
 }
 
-
-
-
-@media screen and (min-width:800px){
-  html{
+@media screen and (min-width: 800px) {
+  html {
     font-size: 0.875em;
   }
 }
 
-@media screen and (min-width:1200px){
-  html{
+@media screen and (min-width: 1200px) {
+  html {
     font-size: 1em;
   }
 }
