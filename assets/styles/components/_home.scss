@@ -17,7 +17,7 @@
 }
 
 .home-intro-head--title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   font-weight: 400;
 }
@@ -103,13 +103,12 @@
   font-size: 1.5rem;
 }
 
-.featured-posts-title a {
-  color: inherit;
-  transition: color 0.2s linear;
-  &:hover {
-    color: $accent-color;
-  }
-}
+// .featured-posts-title a {
+//   transition: color 0.2s linear;
+//   &:hover {
+//     color: $accent-color;
+//   }
+// }
 
 .skills-container {
   display: flex;
