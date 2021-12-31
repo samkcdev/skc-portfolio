@@ -13,8 +13,7 @@ header {
 
 ul.header-nav {
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
 ul.header-nav li {
@@ -28,7 +27,7 @@ ul.header-nav li {
     padding: 0 1.2em;
     position: relative;
   }
-  > div a.resume-link {
+  > a.resume-link {
     border: 1px solid $accent-color;
     color: inherit;
     padding: 0.2em 0.8em;
@@ -64,5 +63,10 @@ ul.header-nav li {
   a:hover:after {
     opacity: 1;
     transform: scale(1);
+  }
+  a.resume-link:hover:before,
+  a.resume-link:hover:after {
+    opacity: 0;
+    transform: scale(0);
   }
 }
