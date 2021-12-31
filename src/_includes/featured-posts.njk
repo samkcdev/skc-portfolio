@@ -1,5 +1,5 @@
 <div class="featured-posts-container">
-{%- for post in collections.post -%}
+{% for post in featuredlist %}
     <div class="featured-posts-content">
         <h3 class="featured-posts-title">
             <a href="#0">{{ post.data.title }} </a>
@@ -11,6 +11,6 @@
         </div>
         <p>{{post.templateContent | striptags }}</p>
     </div>
-{%- endfor -%}
+{% endfor %}
    
 </div>

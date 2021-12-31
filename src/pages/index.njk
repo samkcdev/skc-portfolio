@@ -67,7 +67,8 @@ permalink: /
           <h2 class="featured-headers-title"><span>Blog</span></h2>
           <p class="featured-headers-title--sub">Recent posts from my blog</p>
          </div>
-            {% include "featured-posts.njk" %}
+         {%- set featuredlist = collections.featuredPosts -%}
+        {% include "featured-posts.njk" %}
         </div>
 
 

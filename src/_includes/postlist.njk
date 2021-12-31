@@ -1,7 +1,8 @@
 <ol class="postlist" reversed >
   {% for post in postslist%}
   <li>
-    <a href="#0">{{post.data.title}}</a>
+  <h2><a href="{{ post.url | url }}">{{post.data.title}}</a></h2>
+  <p>{{post.data.description}}</p>
   </li>
   {% endfor %}
 </ol>
