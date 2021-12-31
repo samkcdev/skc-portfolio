@@ -41,11 +41,16 @@ p {
   color: $text-color;
 }
 
-h2 {
-  font-size: 2.25rem;
-}
+// h2 {
+//   font-size: 2.25rem;
+// }
 
 a {
+  color: $text-color;
+  transition: color 0.2s linear;
+}
+
+a:hover {
   color: $accent-color;
 }
 
