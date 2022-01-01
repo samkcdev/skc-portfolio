@@ -13,7 +13,7 @@
 }
 
 .home-intro-head {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .home-intro-head--title {
@@ -76,27 +76,11 @@
   flex-wrap: wrap;
   color: $text-color;
   margin-right: -3.5em;
-  padding-left: 1em;
 }
 
 .featured-posts-content {
   flex: 0 0 calc(50% - 3.5em);
   margin-right: 3.5em;
-  .posts-meta-data {
-    margin-bottom: 0.6em;
-    color: $light-text-color;
-    .post-date {
-      display: inline-block;
-      margin-right: 8px;
-    }
-    .post-tags {
-      border: 1px solid $accent-color;
-      border-radius: 8px;
-      text-align: center;
-      padding: 2px 4px;
-      font-size: 0.8em;
-    }
-  }
 }
 
 .featured-posts-title {
@@ -133,6 +117,25 @@
         left: -20px;
         color: $accent-color;
       }
+    }
+  }
+}
+
+.connect-list-container {
+  padding-left: 1em;
+}
+
+.connect-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+  li {
+    margin-right: 1.25em;
+    a {
+      display: block;
+    }
+    a[href^="mailto:"] {
+      padding-top: 0.5em;
     }
   }
 }
