@@ -3,13 +3,17 @@ layout: base.njk
 ---
 <div class="container">
     <div class="page-container">
-    <article role="article"> 
-    <header>
+    <article class="blog-detail-article" role="article">
+
+    <div class="blog-detail-article--header">
         <h1>{{title}}</h1>
-    </header>
+    </div>
+
+
     <div class="post-content">
         {{content | safe}}
     </div>
+
 </article>
     </div>
 </div>
