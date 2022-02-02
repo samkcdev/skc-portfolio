@@ -6,10 +6,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets");
 
   //passthrough files
-  eleventyConfig.addPassthroughCopy("assets/img");
-  eleventyConfig.addPassthroughCopy("assets/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets/img");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy(
-    "assets/pdf/SamKCherianResume-FrontendDeveloper.pdf"
+    "src/assets/pdf/SamKCherianResume-FrontendDeveloper.pdf"
   );
   // eleventyConfig.addPassthroughCopy("assets/styles");
 

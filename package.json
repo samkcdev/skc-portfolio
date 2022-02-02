@@ -11,12 +11,11 @@
     "build": "npm-run-all build:*"
   },
   "keywords": [
-    "Front",
-    "End",
+    "Front-End Developer",
     "developer",
-    "Web",
-    "Developer",
-    "Portfolio"
+    "Web Developer",
+    "Portfolio",
+    "Eleventy"
   ],
   "author": "Sam Cherian",
   "license": "ISC",
