@@ -4,3 +4,19 @@
     margin-bottom: 2em;
   }
 }
+
+.posts-meta-data {
+  margin-bottom: 0.6em;
+  color: $light-text-color;
+  .post-date {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .post-tags {
+    border: 1px solid $accent-color;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2px 4px;
+    font-size: 0.8em;
+  }
+}
