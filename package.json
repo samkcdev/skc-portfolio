@@ -4,8 +4,8 @@
   "description": "Sam Cherians Personal Website",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch assets/styles:_output/assets/styles",
-    "build:sass": "sass assets/styles:_output/assets/styles",
+    "watch:sass": "sass --watch src/assets/styles:_output/assets/styles",
+    "build:sass": "sass src/assets/styles:_output/assets/styles",
     "watch:eleventy": "eleventy --serve",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*"
