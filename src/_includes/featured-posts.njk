@@ -2,14 +2,14 @@
 {% for post in featuredlist %}
     <div class="featured-posts-content">
         <h3 class="featured-posts-title">
-            <a href="#0">{{ post.data.title }} </a>
+            <a rel="bookmark" href="{{ post.url | url }}">{{ post.data.title }} </a>
         </h3>
         <div class="posts-meta-data">
         <span class="post-date">4.December.2021</span>
            <span class="post-tags">code</span>
         <span class="post-tags">code</span>
         </div>
-        <p>{{post.templateContent | striptags }}</p>
+        <p>{{post.data.description}}</p>
     </div>
 {% endfor %}
 
