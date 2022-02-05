@@ -5,8 +5,7 @@
 
   <h2><a rel="bookmark" href="{{ post.url | url }}">{{post.data.title}}</a></h2>
    <div class="posts-meta-data">
-        {# <span class="post-date">4.December.2021</span> #}
-        {# <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time> #}
+        <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
           {# <span class="post-tags">code</span>
         <span class="post-tags">code</span> #}
   </div>

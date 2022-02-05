@@ -1,0 +1,13 @@
+{
+  "title": "Sam Cherian",
+  "description": "Sam Cherian is a professional front-end developer with 9 years of experience based in Kerala, India",
+  "lang": "en",
+  "domain": "samcherian.in",
+  "repo": "https://github.com/samkcdev/skc-portfolio",
+  "currentyear": 2022,
+  "tools": {
+    "design": "Figma",
+    "developement": "Eleventy",
+    "deployed": "Netlify"
+  }
+}

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <title>{{site.title}} | {{title}}  </title>
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
 </head>
 <body>
     <div class="wrapper">
         {% include "header.njk" %}
-
     <main>
         {{content|safe}}
     </main>

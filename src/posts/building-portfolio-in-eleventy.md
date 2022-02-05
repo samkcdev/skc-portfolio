@@ -1,7 +1,8 @@
 ---
 layout: blog-post.njk
-title: Using eleventy to build a portolio with blog
-description: How I built my portfolio using eleventy
+title: Build and depliy a portolio with blog using eleventy
+description: aka how I built my portfolio using eleventy
+date: Last Modified
 featured: true
 ---
 
