@@ -27,10 +27,16 @@ module.exports = function (eleventyConfig) {
       .filter((item) => item.data.permalink !== false);
   });
 
+  //Filters
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"
     );
+  });
+
+  eleventyConfig.addFilter("dateinyears", (date) => {
+    return DateTime.fromJSDate(date, { zone: "utc" }).toFormat("yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

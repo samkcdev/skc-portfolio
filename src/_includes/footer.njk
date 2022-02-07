@@ -1,8 +1,8 @@
 <footer>
-    <div class="footer-body container">
-        <span>&copy; Copyright {{author.name}} {{site.currentyear}}</span>
-        <span>Designed in {{site.tools.design}} and Built using
-        <a target="_blank" href="https://www.11ty.dev/" title="Go to 11ty website">{{site.tools.developement}} </a>
+    <div class="footer-body container layout-row flex-wrap">
+        <span>&copy; Copyright {{author.name}} {{site.timestamp | dateinyears('yyyy')}}</span>
+        <span>Designed in {{site.tools.design}}, Built using
+        <a target="_blank" href="https://www.11ty.dev/" title="Go to 11ty website">{{site.tools.development}} </a>
         and deployed at {{site.tools.deployed}} </span>
     </div>
 </footer>

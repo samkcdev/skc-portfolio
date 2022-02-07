@@ -1,0 +1,24 @@
+@import "../utils/mixins";
+
+// my minimal grid from Bootsrap
+
+.two-cols {
+  flex: 0 0 auto;
+  width: 50%;
+  padding-right: 1.5rem;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.layout-row {
+  @include layout-row(flex, row);
+}
+
+.layout-col {
+  @include layout-column(flex, column);
+}
+
+.flex-wrap {
+  @include wrap(wrap);
+}

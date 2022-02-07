@@ -4,10 +4,10 @@
   "lang": "en",
   "domain": "samcherian.in",
   "repo": "https://github.com/samkcdev/skc-portfolio",
-  "currentyear": 2022,
+
   "tools": {
     "design": "Figma",
-    "developement": "Eleventy",
+    "development": "Eleventy",
     "deployed": "Netlify"
   }
 }

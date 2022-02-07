@@ -1,0 +1,32 @@
+@use "sass:map";
+
+@import "../base/breakpoints";
+
+@mixin layout-row($display, $direction) {
+  display: $display;
+  flex-direction: $direction;
+}
+
+@mixin layout-column($display, $direction) {
+  display: $display;
+  flex-direction: $direction;
+}
+
+@mixin wrap($wrapval) {
+  flex-wrap: $wrapval;
+}
+
+//Define mixin media-query with breakpoints
+@mixin mobile {
+  $bp: map.get($break-points, mobile);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  $bp: map.get($break-points, tablet);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}

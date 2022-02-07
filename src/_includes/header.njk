@@ -1,27 +1,7 @@
-<header class="container">
-
-    <h2 class="logo">
-    <a href="/">
-        <img src="/assets/img/symbol-logo.svg" alt="Sam Cherian logo">
-    </a>
-    </h2>
-
-    {# navigation #}
-
-         <ul class="header-nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-        <a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      <li>
-                <a target="_blank" href="/assets/pdf/SamKCherianResume-FrontendDeveloper.pdf" class="resume-link" title="Download Resume as PDF">Resume</a>
-</li>
-      </ul>
-
-
-
-
-
-
+<header >
+<div class="layout-row header container">
+ {# navigation #}
+       {% include "navbar.njk" %}
+</div>
 </header>
 

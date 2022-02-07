@@ -1,5 +1,6 @@
 <div class="featured-posts-container align-content-left">
 {% for post in featuredlist %}
+    <div class="two-cols">
     <div class="featured-posts-content">
         <h3 class="featured-posts-title">
             <a rel="bookmark" href="{{ post.url | url }}">{{ post.data.title }} </a>
@@ -11,6 +12,8 @@
         </div>
         <p>{{post.data.description}}</p>
     </div>
+    </div>
+
 {% endfor %}
 
 </div>

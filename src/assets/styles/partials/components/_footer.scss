@@ -1,16 +1,28 @@
+@import "../utils/mixins";
+
 footer {
   border-top: 1px solid rgba(164, 185, 203, 40%);
 }
 
 .footer-body {
   padding: 1em 0;
-  display: flex;
+  margin-bottom: 5rem;
   justify-content: space-between;
   align-items: center;
   span {
     color: $light-text-color;
+    margin-bottom: 0.5rem;
     a {
       color: inherit;
+    }
+  }
+}
+
+@include tablet {
+  .footer-body {
+    margin-bottom: 0;
+    span {
+      margin-bottom: 0rem;
     }
   }
 }

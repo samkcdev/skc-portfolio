@@ -1,13 +1,17 @@
-@import "base/variables";
+@import "partials/base/variables";
 
-@import "base/fonts";
-@import "base/normalize";
-@import "base/reboot";
-@import "base/helper";
+@import "partials/base/fonts";
+@import "partials/base/normalize";
+@import "partials/base/reboot";
+@import "partials/base/helper";
+@import "partials/base/grid";
+@import "partials/base/breakpoints";
 
-@import "components/home";
-@import "components/header";
-@import "components/footer";
-@import "components/post-list";
-@import "components/post";
-@import "components/page";
+@import "partials/utils/mixins";
+
+@import "partials/components/home";
+@import "partials/components/header";
+@import "partials/components/footer";
+@import "partials/components/post-list";
+@import "partials/components/post";
+@import "partials/components/page";

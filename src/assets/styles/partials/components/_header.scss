@@ -1,13 +1,39 @@
+@import "../utils/mixins";
+
+//in mobile view move header to bottom
 header {
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  color: $text-color;
+  background-color: #050e1d;
+  z-index: 1;
+  .logo {
+    display: none;
+  }
+}
+
+.header {
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 0 auto;
-  padding: 2em 0 0 0;
-  color: $text-color;
-  .logo img {
-    vertical-align: middle;
+}
+
+//till tablet view
+@include tablet {
+  header {
+    position: unset;
+    padding: 2em 0 0 0;
+    background-color: unset;
+    .logo {
+      display: block;
+      img {
+        vertical-align: middle;
+      }
+    }
   }
 }
 
