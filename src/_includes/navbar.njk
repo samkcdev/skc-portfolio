@@ -6,7 +6,7 @@
     </h2>
 
   <nav>
-  <ul class="header-nav">
+  <ul class="layout-row header-nav">
       {%- for entry in collections.all | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
         <a href="{{ entry.url | url }}">{{ entry.title }}</a></li>

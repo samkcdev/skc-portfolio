@@ -38,8 +38,14 @@ header {
 }
 
 ul.header-nav {
-  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+@include tablet {
+  ul.header-nav {
+    align-items: center;
+  }
 }
 
 ul.header-nav li {

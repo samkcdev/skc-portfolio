@@ -19,9 +19,15 @@
 }
 
 .home-intro-head--title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   font-weight: 400;
+}
+
+@include tablet {
+  .home-intro-head--title {
+    font-size: 2.5rem;
+  }
 }
 
 .home-intro-head--tag {
@@ -30,8 +36,15 @@
 }
 
 .home-intro-head + p {
-  font-size: 1.5rem;
-  max-width: 95%;
+  font-size: 1.6rem;
+  max-width: 100%;
+}
+
+@include tablet {
+  .home-intro-head + p {
+    font-size: 1.5rem;
+    max-width: 95%;
+  }
 }
 
 .featured-headers {

@@ -1,7 +1,16 @@
+@import "../utils/mixins";
+
 //adds space to main blocks of content for reaability
 .block-space-bottom {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
+
+@include tablet {
+  .block-space-bottom {
+    margin-bottom: 4em;
+  }
+}
+
 //adds space left side of the content so that its aligned to the header
 .align-content-left {
   padding-left: 1em;
