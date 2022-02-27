@@ -3,7 +3,7 @@ layout: blog-post.njk
 title: Build and depliy a portolio with blog using eleventy
 description: aka how I built my portfolio using eleventy
 date: Last Modified
-featured: true
+featured: false
 ---
 
 While I was planning to revamp first version of portfolio (which just plain HTML and CSS and little bit of JavaScript) I wanted to include a blog but was confused how to approach it. I didnt want to use wordpress

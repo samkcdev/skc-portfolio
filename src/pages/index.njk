@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: My personal blog portfolio
+title: Front End Developer
 eleventyNavigation:
   key: Home
   order: 1
@@ -16,7 +16,7 @@ permalink: /
             <h1 class="home-intro-head--title">Hello, I'm Sam Cherian</h1>
             {# <p class="home-intro-head--tag ">Frontend Developer</p> #}
             </div>
-            <p>A self-taught Frontend Developer who loves developing user-friendly, responsive and higly performing websites &amp; web apps. I believe in constant learning and experimenting with new technologies and ideas.</p>
+            <p>Frontend Developer who loves developing user-friendly, responsive and higly performing websites &amp; web apps. I believe in constant learning and experimenting with new technologies and ideas.</p>
         </div>
 
 
@@ -28,8 +28,6 @@ permalink: /
     </div>
 
     <div class="skills-container align-content-left">
-
-
      <div class="skills">
     <ul>
         <li>HTML</li>
@@ -39,7 +37,7 @@ permalink: /
         <li>Angular</li>
     </ul>
     </div>
-    <div class="skills">
+    <div class="skills skills-second-col">
     <ul>
     <li>TypeScript</li>
          <li>11ty</li>
@@ -60,18 +58,25 @@ permalink: /
 
 
 
-         <div class="featured feat-posts block-space-bottom">
+
+
+
+{% if collections.featuredPosts.length %}
+
+    <div class="featured feat-posts block-space-bottom">
          <div class="featured-headers">
           <h2 class="featured-headers-title"><span>Blog</span></h2>
+
           <p class="featured-headers-title--sub">Featured posts from the blog</p>
          </div>
-         {%- set featuredlist = collections.featuredPosts -%}
-        {% include "featured-posts.njk" %}
+            {%- set featuredlist = collections.featuredPosts -%}
+            {% include "featured-posts.njk" %}
         </div>
 
 
-    <div class="connect">
 
+    <div class="connect">
+{% endif %}
     <div class="featured-headers">
          <h2 class="featured-headers-title"><span>Get In Touch</span></h2>
         <p class="featured-headers-title--sub">You can find me here:</p>

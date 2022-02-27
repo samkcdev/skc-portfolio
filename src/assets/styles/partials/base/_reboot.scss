@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 html {
   box-sizing: border-box;
   font-size: 0.75em;
@@ -62,7 +64,7 @@ ol {
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 96vh;
   display: flex;
   flex-direction: column;
 }
